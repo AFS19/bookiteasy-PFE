@@ -27,6 +27,7 @@ export default function ContactPage() {
     // In a real application, you would send the form data to your backend
     console.log("Form submitted:", formData)
     setFormSubmitted(true)
+    setFormData({ name: "", email: "", subject: "", message: "" })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -175,8 +176,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-[#008080] mt-0.5" />
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <a href="mailto:info@bookiteasy.com" className="text-[#008080] hover:underline">
-                        info@bookiteasy.com
+                      <a href="mailto:contact@bookiteasy.com" className="text-[#008080] hover:underline">
+                        contact@bookiteasy.com
                       </a>
                     </div>
                   </div>
@@ -186,7 +187,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-medium">Phone</h4>
                       <a href="tel:+11234567890" className="text-[#008080] hover:underline">
-                        (123) 456-7890
+                        +212 601020304
                       </a>
                     </div>
                   </div>
@@ -195,9 +196,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-[#008080] mt-0.5" />
                     <div>
                       <h4 className="font-medium">Address</h4>
-                      <p>123 Booking Street</p>
-                      <p>Suite 456</p>
-                      <p>San Francisco, CA 94103</p>
+                      <p>Fes, Medina</p>
                     </div>
                   </div>
 
@@ -278,8 +277,8 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-              <p className="text-gray-300">Email: info@bookiteasy.com</p>
-              <p className="text-gray-300">Phone: (123) 456-7890</p>
+              <p className="text-gray-300">Email: contact@bookiteasy.com</p>
+              <p className="text-gray-300">Phone: +212 601020304</p>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-300">

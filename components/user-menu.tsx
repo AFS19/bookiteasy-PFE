@@ -32,15 +32,7 @@ export function UserMenu() {
 
   if (!isAuthenticated || !user) {
     return (
-      <div className="flex items-center gap-3">
-        <Link href="/dashboard">
-          <Button
-            variant="outline"
-            className="text-white border-white/30 bg-green-600 hover:bg-green-700 transition-all duration-200"
-          >
-            My Appointments
-          </Button>
-        </Link>
+      <div>
         <Link href="/auth/signin">
           <Button className="bg-[#FF7F50] hover:bg-[#FF6347] text-white shadow-lg hover:shadow-xl transition-all duration-200">
             Sign In
@@ -62,7 +54,7 @@ export function UserMenu() {
         </Button>
       </Link>
 
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
